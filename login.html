@@ -1,0 +1,28 @@
+<html>
+<head>
+<script>
+function login()
+{var value;
+var x = document.getElementsByClassName("checking");
+for(x=0;x<checking.length;x++)
+{
+if(checking[x].value==" ")
+value=0;
+}
+if(value==0)
+alert("Fill empty fields");
+else
+alert("submitted");
+}
+
+</script>
+</head>
+<body style="background-color:pink">
+<h1 style="text-align:center">Login</h1>
+<p>Enter Username</p>
+<input class="checking"><br><br>
+<p>Enter Password</p>
+<input class="checking"> <br><br>
+<button onclick="login()">Submit</button>
+</body>
+</html>
