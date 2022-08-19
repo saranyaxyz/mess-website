@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>Mess Menu</title>
+<script>
+function menu(){
+var day = document.getElementById("number");
+switch(day)
+{
+case 0:
+document.write("Breakfast - Aloo Paratha \n Lunch - Bhindi \n Dinner - Biryani")
+break;
+case 1:
+document.write("Breakfast - Sambhar-Dosa \n Lunch - Brinjal \n Dinner - GulabJamun")
+break;
+
+
+}
+}
+</script>
+
+
+</head>
+<body>
+<h1>hello</h1>
+<p>Input 0 for weekdays and 1 for weekends</p>
+<input id="number">Input Number</input><br><br>
+<button onclick="menu()">Click</button>
+</body>
+</html>
