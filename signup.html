@@ -1,0 +1,50 @@
+<html>
+<head>
+<script>
+function createAccount()
+{
+ if (document.getElementById("password").value==document.getElementById("repassword").value)
+alert("Account created successfully");
+else
+alert("password does not match repassword");
+}
+</script>
+</head>
+<body style="background-color:yellow">
+<h style="text-align:center;font-size:50px">Registration Form</h>
+<form>
+
+<br><br>
+<input id="name" placeholder="Full Name">
+<br><br>
+<input id="roll no." placeholder="Roll No.">
+<br><br>
+<p>Select your diet type</p>
+<select id="select box">
+<option value="Vegetarian">Vegetarian</option>
+<option value="Non-Vegetarian">Non-Vegetarian</option>
+<option value="Eggetarian">Eggetarian</option>
+</select> <br><br>
+<p>Select meals you will consume from mess</p> 
+<input type="radio" name="a" value="breakfast">Breakfast</input> <br>
+<input type="radio" name="b" value="lunch">Lunch</input> <br>
+<input type="radio" name="c" value="dinner">Dinner</input> <br><br>
+<p>Mess services for</p>
+<input type="radio" name="d">Weekdays</input> <br>
+<input type="radio" name="d">Weekends</input> <br>
+<input type="radio" name="d">Whole Week</input> <br><br>
+
+<p>Account Creation</p> 
+<input id="username" placeholder="Username"><br><br>
+<input id="password" placeholder="Password" type="password"><br><br>
+<input id="repassword" placeholder="RePassword" type="password"><br><br>
+<button onclick="createAccount()">Create Account</button>
+
+
+
+
+
+
+
+</form>
+</html>
