@@ -2,14 +2,14 @@
 <head>
 <script>
 function login()
-{var value;
+{var decide;
 var x = document.getElementsByClassName("checking");
-for(x=0;x<checking.length;x++)
+for(var i=0;i<x.length;i++)
 {
-if(checking[x].value==" ")
-value=0;
+if(x[i].value=="")
+decide=0;
 }
-if(value==0)
+if(decide==0)
 alert("Fill empty fields");
 else
 alert("submitted");
